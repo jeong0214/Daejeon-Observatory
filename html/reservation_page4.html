@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/reservation.css" />
     <link rel="stylesheet" href="../css/index.css" />
     <link rel="stylesheet" href="../css/reservation_page2.css" />
+    <link rel="stylesheet" href="../css/reservation_page3.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -16,11 +17,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script src="../js/calendar.js" defer></script>
     <script src="../js/m_gnb.js" defer></script>
     <script src="../js/shortcuts.js" defer></script>
-    <script src="../js/reservation_seclection.js" defer></script>
-    <script src="../js/link_page2.js" defer></script>
+    <script src="../js/link_page3.js" defer></script>
+    <script src="../js/reservation_page3.js" defer></script>
   </head>
   <body>
     <header class="hd">
@@ -222,7 +222,7 @@
 
             예약선택</span
           >
-          <span
+          <span class="on"
             ><svg
               width="26"
               height="24"
@@ -246,129 +246,195 @@
             정보입력</span
           >
         </div>
-        <form class="reservation_selection_frame">
-          <ul>
-            <li class="rs_tab on">
-              <img src="../img/user.svg" alt="개인" /> 개인예약
-            </li>
-            <li class="rs_tab">
-              <img src="../img/3users.svg" alt="단체" /> 단체예약
-            </li>
-          </ul>
-          <div>
-            <div class="reservation_selection_wrap on">
-              <div class="calendar"></div>
-              <div class="reservation_selection">
-                <div class="btn_reservation_wrap on">
-                  <div class="btn_selection btn_s" data-list="time_1">
-                    <span
-                      ><img src="../img/clock.svg" alt="시계" />15:00 ~
-                      16:00</span
+        <form action="" class="form_information">
+          <div class="information_input">
+            <div class="field">
+              <table>
+                <caption>
+                  <h4><img src="../img/3users.svg" alt="" /> 단체정보</h4>
+                </caption>
+                <tr>
+                  <td class="col1">대표자명</td>
+                  <td class="col2">
+                    <input type="text" name="name" maxlength="5" />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="col1">연락처</td>
+                  <td class="col2">
+                    <input type="text" name="phone_number" maxlength="11" />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="col1">이메일</td>
+                  <td class="col2">
+                    <input type="text" name="mailid" />
+                    <span class="a">@</span>
+                    <input type="text" name="email" />
+                    <select name="mailslc">
+                      <option value="self" selected>직접입력</option>
+                      <option value="naver">naver.com</option>
+                      <option value="gm">gmail.com</option>
+                      <option value="da">daum.com</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="col1">비밀번호</td>
+                  <td class="col2">
+                    <input type="password" name="pwd" maxlength="16" />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="col1">지역</td>
+                  <td class="col2">
+                    <select name="order_detail">
+                      <option
+                        value="
+                      guide"
+                      >
+                        지역선택
+                      </option>
+                      <option value="001">서울특별시</option>
+                      <option value="002">부산광역시</option>
+                      <option value="003">대구광역시</option>
+                      <option value="004">인천광역시</option>
+                      <option value="005">광주광역시</option>
+                      <option value="006">대전광역시</option>
+                      <option value="007">울산광역시</option>
+                      <option value="008">세종특별자치시</option>
+                      <option value="009">경기도</option>
+                      <option value="010">강원도</option>
+                      <option value="011">충청북도</option>
+                      <option value="012">충청남도</option>
+                      <option value="013">전라북도</option>
+                      <option value="014">전라남도</option>
+                      <option value="015">경상북도</option>
+                      <option value="016">경상남도</option>
+                      <option value="017">제주특별자치도</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="col1">관람인원 수</td>
+                  <td class="col2">
+                    <select name="personnel">
+                      <option
+                        value="
+                      guide"
+                      >
+                        관람인원 수
+                      </option>
+                      <option value="001">30</option>
+                      <option value="002">31</option>
+                      <option value="003">32</option>
+                      <option value="004">33</option>
+                      <option value="005">34</option>
+                      <option value="006">35</option>
+                      <option value="007">36</option>
+                      <option value="008">37</option>
+                      <option value="009">38</option>
+                      <option value="010">39</option>
+                      <option value="011">40</option>
+                      <option value="012">41</option>
+                      <option value="013">42</option>
+                      <option value="014">43</option>
+                      <option value="015">44</option>
+                      <option value="016">45</option>
+                      <option value="017">46</option>
+                      <option value="018">47</option>
+                      <option value="019">48</option>
+                      <option value="020">49</option>
+                      <option value="021">50</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="col1">인솔자</td>
+                  <td class="col2">
+                    <select
+                      name="
+                    leader"
                     >
-                    <span>예약가능</span>
-                  </div>
-                  <div class="btn_selection unavailable" data-list="time_2">
-                    <span
-                      ><img src="../img/clock.svg" alt="시계" />16:00 ~
-                      17:00</span
-                    >
-                    <span>예약불가</span>
-                  </div>
-                  <div class="btn_selection btn_s" data-list="time_3">
-                    <span
-                      ><img src="../img/clock.svg" alt="시계" />18:00 ~
-                      19:00</span
-                    >
-                    <span>예약가능</span>
-                  </div>
-                  <div class="btn_selection btn_s" data-list="time_4">
-                    <span
-                      ><img src="../img/clock.svg" alt="시계" />19:00 ~
-                      20:00</span
-                    >
-                    <span>예약가능</span>
-                  </div>
-                  <div class="btn_selection btn_s" data-list="time_5">
-                    <span
-                      ><img src="../img/clock.svg" alt="시계" />20:00 ~
-                      21:00</span
-                    >
-                    <span>예약가능</span>
-                  </div>
-                  <div class="btn_selection btn_s" data-list="time_6">
-                    <span
-                      ><img src="../img/clock.svg" alt="시계" />21:00 ~
-                      22:00</span
-                    >
-                    <span>예약가능</span>
-                  </div>
-                </div>
-                <div class="btn_reservation_wrap">
-                  <div class="btn_selection btn_s" data-list="time1">
-                    <span
-                      ><img src="../img/clock.svg" alt="시계" />15:00 ~
-                      16:00</span
-                    >
-                    <span>예약가능</span>
-                  </div>
-                  <div class="btn_selection unavailable" data-list="time_2">
-                    <span
-                      ><img src="../img/clock.svg" alt="시계" />16:00 ~
-                      17:00</span
-                    >
-                    <span>예약불가</span>
-                  </div>
-                  <div class="btn_selection unavailable" data-list="time_3">
-                    <span
-                      ><img src="../img/clock.svg" alt="시계" />18:00 ~
-                      19:00</span
-                    >
-                    <span>예약불가</span>
-                  </div>
-                  <div class="btn_selection btn_s" data-list="time_4">
-                    <span
-                      ><img src="../img/clock.svg" alt="시계" />19:00 ~
-                      20:00</span
-                    >
-                    <span>예약가능</span>
-                  </div>
-                  <div class="btn_selection btn_s" data-list="time_5">
-                    <span
-                      ><img src="../img/clock.svg" alt="시계" />20:00 ~
-                      21:00</span
-                    >
-                    <span>예약가능</span>
-                  </div>
-                  <div class="btn_selection btn_s" data-list="time_6">
-                    <span
-                      ><img src="../img/clock.svg" alt="시계" />21:00 ~
-                      22:00</span
-                    >
-                    <span>예약가능</span>
-                  </div>
-                </div>
-                <span class="guide_text"
-                  >관람시간 OPEN 14:00 / CLOSE 22:00 / 입장마감 21:50</span
+                      <option
+                        value="
+                      guide"
+                      >
+                        인솔자 유/무
+                      </option>
+                      <option
+                        value="
+                      leader1"
+                      >
+                        있음
+                      </option>
+                      <option
+                        value="
+                      leader2"
+                      >
+                        없음
+                      </option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+              <div class="notice">
+                <span
+                  >※이메일 : 예약내역이 발송됩니다. 실제로 사용하는 이메일을
+                  입력해주세요</span
+                >
+                <span
+                  >※예약확인 : 이메일과 예약시 설정하신 비밀번호를 이용하여
+                  확인가능합니다. 본인만 아는 정보를 입력해주세요.</span
                 >
               </div>
-            </div>
-            <div class="btnstep_wrap">
-              <input type="button" value="이전단계" class="btn_prev_step" />
-              <input
-                type="button"
-                value="다음단계"
-                class="btn_next_step step_individual on"
-              />
-              <input
-                type="button"
-                value="다음단계"
-                class="btn_next_step step_organization"
-              />
             </div>
           </div>
         </form>
       </div>
+      <div class="input_confirmation">
+        <div class="confirmation_detail">
+          <span>정보의 수집·이용 목적</span>
+          <p>
+            '대전시민천문대'이(가) 수집하는 사용자의 개인정보 교육/관람 예약
+            서비스를 위한 목적으로 수집하며 이 외의 목적으로 일체 사용하지
+            않습니다.
+          </p>
+          <span>개인정보의 수집범위</span>
+          <p>
+            '대전시민천문대'이(가) 교육/관람 예약 서비스를 위한 목적으로
+            수집하는 개인정보는 다음과 같습니다. 필수항목 : 이름, 비밀번호,
+            이메일주소, 연락처
+          </p>
+          <span>개인정보 보유기간</span>
+          <p>개인정보는 정보 확인 후 1년 이내 파기됩니다.</p>
+        </div>
+        <span class="page3_caution"
+          >※ 위 내용에 동의하지 않을 시 서비스 이용이 제한될 수 있습니다.</span
+        >
+        <form action="/" id="form_page3">
+          <div class="ck_caution">
+            <input type="checkbox" id="check" value="check" />
+            <label for="check"></label>
+            위 내용에 동의하며 개인정보를 제공합니다.
+          </div>
+          <div class="btnstep_wrap">
+            <button type="submit" class="btn_prev_step2">
+              <img src="../img/prev.svg" alt="prev" /><span>이전 단계</span>
+            </button>
+            <button type="submit" class="btn_reservation_complete" disabled>
+              <span>예약 완료</span>
+            </button>
+          </div>
+        </form>
+      </div>
     </section>
+    <div class="reservation_confirm_overlay">
+      <div class="reservation_confirm">
+        <h5>예약완료</h5>
+        <p>메인화면으로 돌아갑니다.</p>
+      </div>
+    </div>
     <footer>
       <div class="ft_wrap">
         <div class="ft_detail">

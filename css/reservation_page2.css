@@ -46,7 +46,7 @@
   display: flex;
   justify-content: center;
   align-content: center;
-  font-family: var(--font3);
+  font-family: var(--font1);
   font-weight: bold;
   /* text-align: center; */
   padding: 0.5rem 0;
@@ -252,6 +252,7 @@
 }
 .btn_selection span {
   display: flex;
+  font-size: 0.75rem;
   align-items: center;
   font-weight: bold;
 }
@@ -263,6 +264,38 @@
 }
 .btnstep_wrap {
   display: flex;
+  justify-content: center;
+}
+input[type="button"] {
+  margin: 0 15px;
+  padding: 1rem;
+  width: 150px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  font-family: var(--font1);
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #ffffff;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #c64949;
+  margin-bottom: 50px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+}
+input[type="button"].btn_next_step.on {
+  display: flex;
+}
+input[type="button"].btn_next_step {
+  background-image: url(../img/next.svg);
+  background-position: 85%;
+  display: none;
+}
+.btn_prev_step {
+  background-image: url(../img/prev.svg);
+  background-position: 15%;
+  justify-content: right;
 }
 .btnstep_wrap button {
   margin: 0 15px;
@@ -281,4 +314,27 @@
   background-color: #c64949;
   margin-bottom: 50px;
   cursor: pointer;
+}
+@media (max-width: 600px) {
+  .reservation_selection_wrap {
+    flex-direction: column;
+  }
+  .reservation_selection_wrap > div {
+    width: 100%;
+  }
+  .btnstep_wrap {
+    margin-top: 20px;
+  }
+  .btnstep_wrap button {
+    margin: 0 5px;
+    font-size: 0.75rem;
+    width: 120px;
+    height: 50px;
+  }
+  input[type="button"] {
+    margin: 0 5px;
+    font-size: 0.75rem;
+    width: 120px;
+    height: 50px;
+  }
 }

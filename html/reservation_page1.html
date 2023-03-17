@@ -18,6 +18,7 @@
     <script src="../js/m_gnb.js" defer></script>
     <script src="../js/shortcuts.js" defer></script>
     <script src="../js/link_page1.js" defer></script>
+    <script src="../js/reservation_page1.js" defer></script>
   </head>
   <body>
     <header class="hd">
@@ -304,15 +305,17 @@
           </p>
         </div>
       </div>
-      <span class="caution"
-        >※ 주의사항 미확인으로 인한 불이익에 대해 책임지지 않습니다.</span
-      >
-      <span class="ck_caution">
-        <input type="checkbox" id="check" />
-        <label for="check"></label>
-        주의사항을 확인했습니다.
-      </span>
-      <button class="btn_application">예약신청</button>
+      <form action="/" id="form_page1">
+        <span class="caution"
+          >※ 주의사항 미확인으로 인한 불이익에 대해 책임지지 않습니다.</span
+        >
+        <div class="ck_caution">
+          <input type="checkbox" id="check" value="check" />
+          <label for="check"> </label>
+          주의사항을 확인했습니다.
+        </div>
+        <button type="submit" class="btn_application" disabled>예약신청</button>
+      </form>
     </section>
     <footer>
       <div class="ft_wrap">

@@ -20,6 +20,7 @@
     <script src="../js/m_gnb.js" defer></script>
     <script src="../js/shortcuts.js" defer></script>
     <script src="../js/link_page3.js" defer></script>
+    <script src="../js/reservation_page3.js" defer></script>
   </head>
   <body>
     <header class="hd">
@@ -245,7 +246,7 @@
             정보입력</span
           >
         </div>
-        <form action="">
+        <form action="" class="form_information">
           <div class="information_input">
             <div class="field">
               <table>
@@ -319,21 +320,29 @@
         <span class="page3_caution"
           >※ 위 내용에 동의하지 않을 시 서비스 이용이 제한될 수 있습니다.</span
         >
-        <span class="ck_caution">
-          <input type="checkbox" id="check" />
-          <label for="check"></label>
-          위 내용에 동의하며 개인정보를 제공합니다.
-        </span>
-        <div class="btnstep_wrap">
-          <button class="btn_prev_step2">
-            <img src="../img/prev.svg" alt="prev" /><span>이전 단계</span>
-          </button>
-          <button class="btn_reservation_complete">
-            <span>예약 완료</span><img src="../img/next.svg" alt="next" />
-          </button>
-        </div>
+        <form action="/" id="form_page3">
+          <div class="ck_caution">
+            <input type="checkbox" id="check" value="check" />
+            <label for="check"></label>
+            위 내용에 동의하며 개인정보를 제공합니다.
+          </div>
+          <div class="btnstep_wrap">
+            <button type="submit" class="btn_prev_step2">
+              <img src="../img/prev.svg" alt="prev" /><span>이전 단계</span>
+            </button>
+            <button type="submit" class="btn_reservation_complete" disabled>
+              <span>예약 완료</span>
+            </button>
+          </div>
+        </form>
       </div>
     </section>
+    <div class="reservation_confirm_overlay">
+      <div class="reservation_confirm">
+        <h5>예약완료</h5>
+        <p>메인화면으로 돌아갑니다.</p>
+      </div>
+    </div>
     <footer>
       <div class="ft_wrap">
         <div class="ft_detail">
