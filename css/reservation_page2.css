@@ -38,6 +38,7 @@
 .rs_tab.on {
   background-color: #ffffff;
 }
+
 .reservation_selection_frame ul li {
   width: calc(100% / 2);
   cursor: pointer;

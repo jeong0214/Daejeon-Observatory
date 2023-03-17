@@ -1,0 +1,91 @@
+form {
+  background-color: #ffffff;
+  margin-top: 30px;
+  border: 1px solid black;
+  color: #3a3a3a;
+  width: calc(100% - 2rem);
+  /* font-family: var(--font3); */
+}
+.information_input {
+  width: 100%;
+}
+.field {
+  width: 100%;
+}
+.field table {
+  width: 100%;
+}
+.field caption {
+  width: 100%;
+  /* height: 30px; */
+  /* border: 1px solid black; */
+}
+.field caption h4 {
+  /* border: 1px solid black; */
+  padding: 0.5rem;
+  align-items: center;
+  display: flex;
+  /* font-family: var(--font3); */
+  font-size: 1.25rem;
+}
+.field caption h4 img {
+  height: 25px;
+  /* border: 1px solid black; */
+}
+.field table tr {
+  width: 100%;
+  border: 1px solid #d9d9d9;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid #aeaeae;
+}
+input:focus {
+  outline: none;
+  background-image: url(../img/path.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  border-bottom: 1px solid #3a3a3a;
+}
+.col1 {
+  background-color: #eaeaea;
+  padding: 1rem;
+}
+.col2 {
+  padding: 1rem;
+}
+.notice {
+  background-color: #eaeaea;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 4rem;
+}
+.input_confirmation {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.confirmation_detail {
+  /* max-width: 800px; */
+  padding: 0 2rem;
+  font-size: 0.75rem;
+  width: 100%;
+}
+.confirmation_detail span {
+  font-weight: bold;
+}
+.confirmation_detail p {
+  margin-bottom: 0.2rem;
+}
+.page3_caution {
+  margin: 20px 0 10px 0;
+  color: #ff9090;
+  text-align: center;
+}
+.btnstep_wrap {
+  margin-bottom: 50px;
+  justify-content: center;
+}
