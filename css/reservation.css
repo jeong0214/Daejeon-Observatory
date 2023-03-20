@@ -54,11 +54,11 @@ body {
   width: 100%;
   display: flex;
 }
-.reservation_step span.on {
+.step.on {
   background-color: var(--color1);
   color: #5f5fe0;
 }
-.reservation_step span {
+.step {
   width: calc(100% / 3);
   padding: 0.5rem 0;
   display: flex;
@@ -68,10 +68,13 @@ body {
   background-color: var(--color2);
   position: relative;
 }
-.reservation_step span.on:nth-child(-n + 2)::before {
+.step span {
+  line-height: normal;
+}
+.step.on:nth-child(-n + 2)::before {
   background-image: url(../img/Vector.svg);
 }
-.reservation_step span:nth-child(-n + 2)::before {
+.step:nth-child(-n + 2)::before {
   content: "";
   position: absolute;
   height: 109%;
@@ -84,12 +87,8 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
 }
-
-.reservation_step span svg {
+.step img {
   padding: 0 0.3rem;
-}
-.reservation_step span.on svg path {
-  fill: #5f5fe0;
 }
 .terms_wrap {
   width: 100%;
