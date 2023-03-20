@@ -517,6 +517,7 @@
   left: 50%;
   transform: translateX(-50%);
   bottom: 5%;
+  line-height: normal;
 }
 .sec2_slide.swiper {
   width: 100%;

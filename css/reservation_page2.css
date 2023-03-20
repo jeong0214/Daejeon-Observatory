@@ -315,6 +315,9 @@ input[type="button"].btn_next_step {
   margin-bottom: 50px;
   cursor: pointer;
 }
+.btn_next_step:disabled {
+  background-color: #aeaeae;
+}
 @media (max-width: 600px) {
   .reservation_selection_wrap {
     flex-direction: column;

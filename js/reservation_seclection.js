@@ -31,5 +31,8 @@ function toggleButtonClass(buttons, onButton) {
 $buttons.forEach((button) => {
   button.addEventListener("click", () => {
     toggleButtonClass($buttons, button);
+    $btn_individual.forEach((list) => {
+      list.removeAttribute("disabled");
+    });
   });
 });
