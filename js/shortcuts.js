@@ -1,3 +1,4 @@
+// 푸터 사이트 링크 기능
 const $btn_shortcuts = document.querySelectorAll(".detail_shortcuts");
 const $caption = document.querySelectorAll(".dr_caption");
 

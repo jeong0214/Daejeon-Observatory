@@ -550,6 +550,7 @@
   width: 100%;
   width: 100%;
 }
+/* 섹션 3 상단 3가지 요소 */
 .sec3_contents {
   padding-top: 100px;
   width: 100%;
@@ -579,6 +580,7 @@
   width: 100%;
   padding: 22px 0;
 }
+/* 특별 프로그램 */
 .special_program {
   background-image: url(../img/sec3_backgroud1.png);
   display: flex;
@@ -606,6 +608,7 @@
   background-color: #fff73a;
   padding: 0.5rem;
 }
+/* 관측 프로그램 */
 .observation_program {
   background-image: url(../img/sec3_backgroud2.png);
   color: #ffffff;
@@ -614,6 +617,7 @@
   width: 100%;
   height: 250px;
 }
+/* 시설안내 */
 .facility_information {
   background-image: url(../img/sec3_backgroud3.png);
 }
@@ -660,6 +664,7 @@
   height: 100%;
   width: 100%;
 }
+/* 커뮤니티 */
 .community {
   font-family: var(--font1);
   color: #000000;
@@ -672,8 +677,6 @@
   display: flex;
 }
 
-.community_title li.on {
-}
 .cm_tab {
   position: relative;
   cursor: pointer;
@@ -846,6 +849,15 @@ footer {
 }
 
 @media (max-width: 1100px) {
+  /* pagenation */
+  .pagenation {
+    display: none;
+  }
+  /* 스크롤다운 애니메이션 */
+  .scroll-downs {
+    display: none;
+  }
+  /* gnb */
   .gnb {
     display: none;
   }
@@ -855,26 +867,32 @@ footer {
   .tnb i {
     display: block;
   }
+  /* 섹션3 */
   .sec3_contents > div {
     padding: 1rem 2rem;
   }
   .community {
     padding: 1rem 2rem;
   }
+  /* sec2 */
+  #section2 {
+    padding-top: 100px;
+    height: auto;
+  }
+
+  /* 푸터 */
+  footer {
+    position: relative;
+  }
 }
 
 @media (max-width: 750px) {
+  /* 푸터 */
   .ft_wrap {
     flex-direction: column;
   }
 }
 @media (max-width: 600px) {
-  .pagenation {
-    display: none;
-  }
-  .scroll-downs {
-    display: none;
-  }
   /* sec1 반응형 */
   .section {
     height: auto;
@@ -942,6 +960,7 @@ footer {
     width: 100%;
     padding: 1rem 1rem;
   }
+  /* sec3 커뮤니티 */
   .community {
     padding: 25px 0;
     height: 100%;
@@ -966,9 +985,7 @@ footer {
     width: 100%;
   }
   /* 푸터반응형 */
-  footer {
-    position: relative;
-  }
+
   .ft_wrap {
     align-items: center;
   }

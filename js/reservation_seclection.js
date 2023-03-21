@@ -1,3 +1,4 @@
+//예약페이지2 예약 날짜선택 기능
 const $rs_tab = document.querySelectorAll(".rs_tab");
 const $rs_detail = document.querySelectorAll(".btn_reservation_wrap");
 const $btn_individual = document.querySelectorAll(".btn_next_step");

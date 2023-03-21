@@ -1,3 +1,4 @@
+// 달력 기능
 function CalendarControl() {
   const calendar = new Date();
   const calendarControl = {

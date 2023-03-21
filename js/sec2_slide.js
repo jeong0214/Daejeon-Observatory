@@ -1,3 +1,4 @@
+// 메인화면 섹션 2 스와이퍼 기능
 var swiper = new Swiper(".sec2_slide", {
   loop: true,
   // loopAdditionalSlides: 1,

@@ -1,12 +1,13 @@
+// 메인화면 풀페이지 기능
 const $sections = document.querySelectorAll(".section");
 const $pg_dt = document.querySelectorAll(".pagenation > a");
 window.addEventListener("resize", () => {
   setTimeout(() => {
     location.reload();
-  }, 5000);
+  }, 2500);
 });
 //풀페이지 모션
-if (window.innerWidth > 600) {
+if (window.innerWidth > 1100) {
   $sections.forEach((section) => {
     section.addEventListener("mousewheel", (e) => {
       e.preventDefault();

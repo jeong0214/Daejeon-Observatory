@@ -23,6 +23,7 @@
     <script src="../js/reservation_page3.js" defer></script>
   </head>
   <body>
+    <!-- 헤더영역 -->
     <header class="hd">
       <div class="hd_menu">
         <a href="../html/index.html"
@@ -81,6 +82,7 @@
         </div>
       </div>
     </header>
+    <!-- 모바일 gnb -->
     <div class="M_gnb_overlay">
       <span class="push_bar_wrap"
         ><i class="fa-solid fa-chevron-right push_bar"></i
@@ -95,6 +97,7 @@
         </div>
       </div>
     </div>
+    <!-- 프로그램 단계 -->
     <section class="reservation_system">
       <div class="reservation_wrap">
         <div class="reservation_buttom">
@@ -116,6 +119,7 @@
             <span>정보입력</span>
           </div>
         </div>
+        <!-- 개인예약자 정보입력 폼 -->
         <form action="" class="form_information">
           <div class="information_input">
             <div class="field">
@@ -126,19 +130,31 @@
                 <tr>
                   <td class="col1">이름</td>
                   <td class="col2">
-                    <input type="text" name="name" maxlength="5" />
+                    <input
+                      type="text"
+                      id="input_name"
+                      name="name"
+                      maxlength="5"
+                    />
+                    <p class="name_log"></p>
                   </td>
                 </tr>
                 <tr>
                   <td class="col1">연락처</td>
                   <td class="col2">
-                    <input type="text" name="phone_number" maxlength="11" />
+                    <input
+                      type="text"
+                      id="input_number"
+                      name="phone_number"
+                      maxlength="13"
+                    />
+                    <p class="number_log"></p>
                   </td>
                 </tr>
                 <tr>
                   <td class="col1">이메일</td>
                   <td class="col2">
-                    <input type="text" name="mailid" />
+                    <input type="text" id="input_email" name="mailid" />
                     <span class="a">@</span>
                     <input type="text" name="email" />
                     <select name="mailslc">
@@ -147,12 +163,19 @@
                       <option value="gm">gmail.com</option>
                       <option value="da">daum.com</option>
                     </select>
+                    <p class="email_log"></p>
                   </td>
                 </tr>
                 <tr>
                   <td class="col1">비밀번호</td>
                   <td class="col2">
-                    <input type="password" name="pwd" maxlength="16" />
+                    <input
+                      type="password"
+                      id="input_pw"
+                      name="pwd"
+                      maxlength="16"
+                    />
+                    <p class="pw_log"></p>
                   </td>
                 </tr>
               </table>
@@ -170,6 +193,7 @@
           </div>
         </form>
       </div>
+      <!-- 확인 안내 문구  -->
       <div class="input_confirmation">
         <div class="confirmation_detail">
           <span>정보의 수집·이용 목적</span>
@@ -190,12 +214,14 @@
         <span class="page3_caution"
           >※ 위 내용에 동의하지 않을 시 서비스 이용이 제한될 수 있습니다.</span
         >
+        <!-- 체크 박스 폼 -->
         <form action="/" id="form_page3">
           <div class="ck_caution">
             <input type="checkbox" id="check" value="check" />
             <label for="check"></label>
             위 내용에 동의하며 개인정보를 제공합니다.
           </div>
+          <!-- 페이지 버튼 -->
           <div class="btnstep_wrap">
             <button type="submit" class="btn_prev_step2">
               <img src="../img/prev.svg" alt="prev" /><span>이전 단계</span>
@@ -207,12 +233,14 @@
         </form>
       </div>
     </section>
+    <!-- 예약완료 오버레이 문구 -->
     <div class="reservation_confirm_overlay">
       <div class="reservation_confirm">
         <h5>예약완료</h5>
         <p>메인화면으로 돌아갑니다.</p>
       </div>
     </div>
+    <!-- 푸터영역 -->
     <footer>
       <div class="ft_wrap">
         <div class="ft_detail">
@@ -224,6 +252,7 @@
             Copyright © 2017 Daejeon Observatory. All rights reserved
           </p>
         </div>
+        <!-- 타 사이트 바로가기 영역 -->
         <div class="ft_shortcuts">
           <div class="site_shortcuts">
             <button class="detail_shortcuts">

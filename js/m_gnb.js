@@ -1,3 +1,4 @@
+// 모바일 gnb 기능
 const $bars = document.querySelector(".bars");
 const $M_gnb = document.querySelector(".M_gnb_overlay");
 const $gnb = document.querySelector(".M_gnb");

@@ -1,3 +1,4 @@
+// 메인화면 섹션 3 시설안내 탭 기능
 const $fi_tab = document.querySelectorAll(".fi_tab");
 const $fi_img = document.querySelectorAll(".fi_img");
 

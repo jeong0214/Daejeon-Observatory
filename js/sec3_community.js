@@ -1,3 +1,4 @@
+// 메인화면 섹션 3 커뮤니티 탭 기능
 const $cm_tab = document.querySelectorAll(".cm_tab");
 const $cm_detail = document.querySelectorAll(".community_detail_wrap");
 
