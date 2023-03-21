@@ -27,7 +27,7 @@
 
 ## 사용 툴
 
-|                                              JavaScript                                              |                                                TypeScript                                                |                                                         React                                                          |                                                     Node                                                     |
+|                                              JavaScript                                              |                                                TypeScript                                                |                                                         React                                                          |                                                     Figma                                                     |
 | :--------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------: |
 | <img src="./Readme_img/html.svg" width="120px" height="120px" title="px(픽셀) 크기 설정" alt="html"> | <img src="./Readme_img/css.svg" width="120px" height="120px" title="px(픽셀) 크기 설정" alt="css"></img> | <img src="./Readme_img/javascript.svg" width="120px" height="120px" title="px(픽셀) 크기 설정" alt="javascript"></img> | <img src="./Readme_img/figma.svg" width="120px" height="120px" title="px(픽셀) 크기 설정" alt="figma"></img> |
 
