@@ -51,7 +51,7 @@ const $number = document.querySelector("#input_number"),
 $number.addEventListener("input", () => {
   const numberValue = $number.value;
   document.querySelector(".number_log").textContent = !reg.test(numberValue)
-    ? "'-' 포함한 정확한 연락처를 입력해주세요."
+    ? "'-' 제외한 정확한 연락처를 입력해주세요."
     : "";
 }),
   $number.addEventListener("blur", () => {
@@ -81,3 +81,7 @@ $password.addEventListener("input", () => {
   $password.addEventListener("blur", () => {
     document.querySelector(".pw_log").textContent = "";
   });
+
+function func(email) {
+  document.inform.email.value = email;
+}

@@ -120,7 +120,7 @@
           </div>
         </div>
         <!-- 개인예약자 정보입력 폼 -->
-        <form action="" class="form_information">
+        <form action="" name="inform" class="form_information">
           <div class="information_input">
             <div class="field">
               <table>
@@ -146,7 +146,7 @@
                       type="text"
                       id="input_number"
                       name="phone_number"
-                      maxlength="13"
+                      maxlength="11"
                     />
                     <p class="number_log"></p>
                   </td>
@@ -156,12 +156,16 @@
                   <td class="col2">
                     <input type="text" id="input_email" name="mailid" />
                     <span class="a">@</span>
-                    <input type="text" name="email" />
-                    <select name="mailslc">
-                      <option value="self" selected>직접입력</option>
-                      <option value="naver">naver.com</option>
-                      <option value="gm">gmail.com</option>
-                      <option value="da">daum.com</option>
+                    <input type="text" id="input_email2" name="email" />
+                    <select
+                      id="select_email"
+                      onchange="func(this.value)"
+                      name="mailslc"
+                    >
+                      <option value="" selected>직접입력</option>
+                      <option value="naver.com">naver.com</option>
+                      <option value="gmail.com">gmail.com</option>
+                      <option value="daum.com">daum.com</option>
                     </select>
                     <p class="email_log"></p>
                   </td>
