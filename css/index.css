@@ -205,6 +205,9 @@
 .M_gnb .sub li {
   padding: 0.2rem 0;
 }
+.M_gnb > ul > li:hover {
+  background-color: #3a3a3a;
+}
 .push_bar_wrap {
   font-size: 2rem;
   /* height: 100%; */
@@ -775,6 +778,7 @@
 }
 /* footer */
 footer {
+  font-family: var(--font1);
   position: absolute;
   bottom: 0;
   left: 0;
@@ -814,6 +818,7 @@ footer {
   margin: 0.5rem 0;
   border: none;
   width: 100%;
+  font-family: var(--font1);
 }
 .dr_caption {
   z-index: 1;
@@ -825,6 +830,7 @@ footer {
   padding: 0.5rem;
   background: #eaeaea;
   display: none;
+  font-family: var(--font1);
 }
 
 .detail_shortcuts.on + .dr_caption {
@@ -834,6 +840,9 @@ footer {
 .dr_caption > li {
   font-size: 0.75rem;
   padding: 0.2rem;
+}
+.dr_caption > li > a {
+  color: #000000;
 }
 
 @media (max-width: 1100px) {
