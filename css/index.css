@@ -311,6 +311,82 @@
     opacity: 0;
   }
 }
+.star {
+  position: absolute;
+  bottom: 80%;
+  left: 70%;
+  width: 10px;
+  height: 10px;
+  background-size: contain;
+  background-image: url(../img/star.svg);
+  animation-name: star;
+  animation-timing-function: cubic-bezier(0, 2.6, 1.3, 0);
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+.star1 {
+  animation-duration: 2.2s;
+  bottom: 75%;
+  left: 70%;
+}
+.star2 {
+  animation-duration: 3.2s;
+  bottom: 76%;
+  left: 75%;
+}
+.star3 {
+  animation-duration: 2.5s;
+  bottom: 85%;
+  left: 70%;
+}
+.star4 {
+  animation-duration: 2.3s;
+  bottom: 85%;
+  left: 90%;
+}
+.star5 {
+  animation-duration: 2.5s;
+  bottom: 82%;
+  left: 98%;
+}
+.star6 {
+  animation-duration: 2.7s;
+  bottom: 78%;
+  left: 55%;
+}
+.star7 {
+  animation-duration: 2.9s;
+  bottom: 65%;
+  left: 99%;
+}
+.star8 {
+  animation-duration: 2.7s;
+  bottom: 75%;
+  left: 30%;
+}
+.star9 {
+  animation-duration: 2.5s;
+  bottom: 85%;
+  left: 9%;
+}
+.star10 {
+  animation-duration: 2.9s;
+  bottom: 90%;
+  left: 23%;
+}
+@keyframes star {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-500px) translateY(500px);
+    opacity: 0;
+  }
+}
 /* sec1 영역 */
 .section {
   height: 100vh;
@@ -898,6 +974,10 @@ footer {
   }
 }
 @media (max-width: 600px) {
+  /* 별 애니메이션 */
+  .star {
+    display: none;
+  }
   /* sec1 반응형 */
   .section {
     height: auto;
