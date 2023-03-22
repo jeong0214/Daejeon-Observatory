@@ -1,13 +1,15 @@
 @charset 'utf-8';
 @import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap");
 @font-face {
-  font-family: "GmarketSansMedium";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
-    format("woff");
+  font-family: "MICEGothic Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEGothic Bold.woff2")
+    format("woff2");
+  font-weight: 700;
   font-style: normal;
 }
+
 :root {
-  --font1: "GmarketSansMedium";
+  --font1: "MICEGothic Bold";
   --font2: "Noto Serif KR", serif;
   --font3: "Noto Sans", sans-serif;
 }
@@ -684,6 +686,9 @@
   font-weight: bold;
   padding: 0.5rem;
 }
+.cm_tab:hover {
+  color: #3a3a3a;
+}
 .cm_tab.on::after {
   display: block;
 }
@@ -921,7 +926,9 @@ footer {
     display: none;
   }
   /* sec2 반응형 */
-
+  #section2 {
+    padding-top: 0;
+  }
   .section2_detail {
     flex-direction: column;
   }
@@ -940,6 +947,15 @@ footer {
   }
   .explanation button {
     margin: 0;
+  }
+  .sec2_slide img {
+    width: auto;
+  }
+  .sec2_banner {
+    height: 360px;
+  }
+  .sec2_banner h4 {
+    font-size: 1rem;
   }
   .sec2_next {
     top: 70%;
@@ -1005,5 +1021,8 @@ footer {
   }
   .site_shortcuts {
     width: 80%;
+  }
+  .dr_caption {
+    bottom: 85%;
   }
 }

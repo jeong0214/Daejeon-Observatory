@@ -1,13 +1,7 @@
 @charset 'utf-8';
-@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap");
-@font-face {
-  font-family: "GmarketSansMedium";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
-    format("woff");
-  font-style: normal;
-}
+
 :root {
-  --font1: "GmarketSansMedium";
+  --font1: "MICEGothic Bold";
   --font2: "Noto Serif KR", serif;
   --font3: "Noto Sans", sans-serif;
   --color1: #9fd1ff;
