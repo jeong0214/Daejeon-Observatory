@@ -1,6 +1,6 @@
-# 대전시민천문대 renewal
+# <p align="center"> <img src="./Readme_img/icon.png" title="px(픽셀) 크기 설정" alt="icon"></p>
 
-대전시민천문대 : https://djstar.kr/ 사이트 리뉴얼
+대전시민천문대 : https://djstar.kr/
 
 ---
 
