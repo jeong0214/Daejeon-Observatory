@@ -129,6 +129,7 @@
 }
 .tnb a:hover {
   color: #2a0094;
+  transform: scale(1.2);
 }
 .tnb i {
   font-size: 2rem;
@@ -327,6 +328,7 @@
   left: -70%;
   width: 200%;
   height: 200%;
+  /* background-color: #000000; */
   transform: rotateZ(135deg);
 }
 .star {
@@ -411,7 +413,7 @@
 .star:nth-child(6) {
   -webkit-animation-delay: 8365ms;
   animation-delay: 8365ms;
-  bottom: 70%;
+  bottom: 65%;
   left: 20%;
 }
 .star:nth-child(7) {
@@ -452,7 +454,7 @@
   }
 
   50% {
-    width: 30px;
+    width: 15px;
   }
 
   100% {
