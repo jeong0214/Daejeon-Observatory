@@ -53,6 +53,8 @@
 }
 .gnb > ul > li:hover > a {
   color: #2a0094;
+  transform: rotatey(360deg);
+  transition: 0.3s;
 }
 .gnb > ul > li::before {
   content: "";
