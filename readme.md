@@ -67,4 +67,4 @@ proposal link")
 ### 메인페이지
 
 <img src="./Readme_img/index.gif" alt="index"></img>
-<img src="./Readme_img/M_index.gif" alt="index"></img>
+<img src="./Readme_img/m_index.gif" alt="index"></img>
