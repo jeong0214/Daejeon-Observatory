@@ -1,6 +1,6 @@
 # <p align="center"> <img src="./Readme_img/icon.png" alt="icon"></p>
 
-대전시민천문대 : https://djstar.kr/
+Demo:https://web-daejeon-observatory-1io3t2blg1j97wh.sel3.cloudtype.app/html/index.html
 
 ---
 
