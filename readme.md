@@ -12,7 +12,7 @@ Demo Site : https://web-daejeon-observatory-1io3t2blg1j97wh.sel3.cloudtype.app/h
 
 ### 프로젝트 목적
 
-메인 인덱스 부분을 가독성에 맞춘 새로운 레이아웃과 디자인, 예약시스템 페이지 부분의 편의성 개편 및 디자인,레이아웃을 반응형으로 재구성
+메인 인덱스 부분을 가독성에 맞춘 새로운 레이아웃과 디자인,<br/> 예약시스템 페이지 부분의 편의성 개편 및 디자인,레이아웃을 반응형으로 재구성
 
 ---
 ### 프로젝트 역할
@@ -44,9 +44,9 @@ Demo Site : https://web-daejeon-observatory-1io3t2blg1j97wh.sel3.cloudtype.app/h
 ### 프로젝트 내 기능구현
 
 -index부분의 모바일 gnb <br/>
--swiper를 활용한 슬라이드
--시설안내 및 안내문 부분 탭메뉴로 구성
--달력 기능(codepen소스 수정해서 활용)
+-swiper를 활용한 슬라이드 <br/>
+-시설안내 및 안내문 부분 탭메뉴로 구성 <br/>
+-달력 기능(codepen소스 수정해서 활용) <br/>
 -input요소 작성 시 정규식 표현 안내문구
 
 ---
