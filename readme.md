@@ -1,6 +1,7 @@
 # <p align="center"> <img src="./Readme_img/icon.png" alt="icon"></p>
 
-Demo:https://web-daejeon-observatory-1io3t2blg1j97wh.sel3.cloudtype.app/html/index.html
+[Demo Site](https://web-daejeon-observatory-1io3t2blg1j97wh.sel3.cloudtype.app/html/index.html, " 
+Demo link")
 
 ---
 
