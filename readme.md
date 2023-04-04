@@ -43,7 +43,7 @@ Demo Site : https://web-daejeon-observatory-1io3t2blg1j97wh.sel3.cloudtype.app/h
 
 ### 프로젝트 내 기능구현
 
--index부분의 모바일 gnb
+-index부분의 모바일 gnb <br/>
 -swiper를 활용한 슬라이드
 -시설안내 및 안내문 부분 탭메뉴로 구성
 -달력 기능(codepen소스 수정해서 활용)
