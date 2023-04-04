@@ -41,7 +41,7 @@ Demo Site : https://web-daejeon-observatory-1io3t2blg1j97wh.sel3.cloudtype.app/h
 
 ---
 
-### 프로젝트 내 기능구현
+### 💡프로젝트 내 기능구현
 
 -index부분의 모바일 gnb <br/>
 -swiper를 활용한 슬라이드 <br/>
@@ -51,7 +51,7 @@ Demo Site : https://web-daejeon-observatory-1io3t2blg1j97wh.sel3.cloudtype.app/h
 
 ---
 
-### 프로젝트 링크
+### 🔗프로젝트 링크
 
 약식 기획서 (구글 프레젠테이션) : [리뉴얼 기획서](https://docs.google.com/presentation/d/1PtCZ5NK-zUa_itFyQhS6pijREdrjelmpOlcfts9Cqdo/edit#slide=id.p, " 
 proposal link")
