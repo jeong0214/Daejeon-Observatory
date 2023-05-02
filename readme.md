@@ -1,6 +1,6 @@
-# <p align="center"> <img src="./Readme_img/icon.png" alt="icon"></p>
+## <p align="center"> <img src="./Readme_img/icon.png" alt="icon"></p>
 
-Demo Site : https://web-daejeon-observatory-1io3t2blg1j97wh.sel3.cloudtype.app/html/index.html
+###### <p align="center">클릭 시 데모 사이트 이동 <br>👇[![텍스트](./Readme_img/indeximg2.png)](https://web-daejeon-observatory-1io3t2blg1j97wh.sel3.cloudtype.app/html/index.html)</p>
 
 ---
 
