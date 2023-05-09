@@ -53,7 +53,6 @@
 }
 .gnb > ul > li:hover > a {
   color: #2a0094;
-  transform: rotatey(360deg);
   transition: 0.3s;
 }
 .gnb > ul > li::before {
@@ -595,6 +594,13 @@
 .explanation h3 {
   font-size: 1.5rem;
   font-weight: bold;
+}
+.moon {
+  width: 40px;
+  height: 40px;
+  transition: 13s;
+}
+@keyframes {
 }
 .explanation p {
   margin-top: 2rem;
@@ -1187,17 +1193,26 @@ footer {
   }
   .ft_detail {
     text-align: center;
+    height: 40px;
+  }
+  .ft_detail a img {
+    height: 100%;
   }
   .ft_detail p {
-    text-align: left;
+    display: none;
+    /* text-align: left; */
   }
   .ft_shortcuts {
-    margin: 1rem 0 0 0;
+    margin: 0.25rem 0 0 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 600px;
     width: 100%;
+  }
+  .detail_shortcuts {
+    font-size: 0.75rem;
+    margin: 0.25rem 0;
   }
   .site_shortcuts {
     width: 80%;
