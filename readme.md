@@ -64,10 +64,9 @@ proposal link")
 
 ---
 
-### 제작과정 
+### 📝작업 히스토리 
 
-
-<p align="center">블로그 </br>[![텍스트](./Readme_img/blog.png)](https://jeongseok-0214.tistory.com/8)</p>
+<p align="center">https://jeongseok-0214.tistory.com/8</p>
 
 ### 👁️‍🗨️미리보기
 
